@@ -1,7 +1,8 @@
 public class Result<T> : Result
 {
     public T? Data { get; }
-    public Result(bool isSuccess, Error error, T? data = default) : base(isSuccess, error)
+    public Result(bool isSuccess, Error error, T? data = default) 
+     : base(isSuccess, error)
     {
         Data = data;
     }

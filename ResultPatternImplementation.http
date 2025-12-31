@@ -1,0 +1,14 @@
+﻿@ResultPatternImplementation_HostAddress = https://localhost:7226
+
+GET {{ResultPatternImplementation_HostAddress}}/api/user/GetUsers
+
+###
+
+POST {{ResultPatternImplementation_HostAddress}}/api/user/CreateUser
+Content-Type: application/json
+
+{
+  //User
+}
+
+###

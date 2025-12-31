@@ -18,6 +18,11 @@ public class UserController : ControllerBase
         var result = await _userService.GetUsersAsync();
         if (result.IsSuccess)
         {
+           /* string a = new Error("hata");
+            Error b = a;
+            a = b;*/
+
+
             return Ok(result);
         }
         return NotFound(result.Error);
