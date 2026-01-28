@@ -12,3 +12,23 @@ Content-Type: application/json
 }
 
 ###
+
+GET {{ResultPatternImplementation_HostAddress}}/api/user/GetUsers
+
+###
+
+POST {{ResultPatternImplementation_HostAddress}}/api/user/CreateUserNew
+Content-Type: application/json
+
+{
+  "id":-1,
+  "name":"Volkan",
+  "email":"volkan@ab.com"
+}
+
+###
+
+@id=9000
+GET {{ResultPatternImplementation_HostAddress}}/api/user?id={{id}}
+
+###
